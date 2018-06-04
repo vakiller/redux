@@ -1,14 +1,17 @@
-# Tài liệu kết nối shippo
+# TÀI LIỆU KẾT NỐI SHIPPO
 
 Hệ thống Shippo là hệ thống mở, cung cấp khả năng kết nối mạnh mẽ. Bộ tài liệu này nhằm cung cấp những thông tin cho các nhà phát triển các thông tin và hướng dẫn cách thức kết nối tới Shippo.
 
-Việc kết nối thực hiện bởi việc tạo các truy vấn HTTP tới đường dẫn API cung cấp bởi Shippo \(ngắn gọn là call API\). Các truy vấn này tất nhiên phải được xác thực bằng các mã xác thực "Access Token" hoặc mã xác thực cá nhân "Personal Access Token".
+Việc kết nối thực hiện bởi việc tạo các truy vấn HTTP tới đường dẫn API cung cấp bởi Shippo (ngắn gọn là call API). Các truy vấn này tất nhiên phải được xác thực bằng các mã xác thực "Access Token" hoặc mã xác thực cá nhân "Personal Access Token".
 
-Mã xác thực \(đôi với bên thứ 3\) của một tài khoản có được sau khi trải qua quá trình chứng thực - authentication. Chính vì vậy chúng tôi gọi tài liệu này là bộ Tài Liệu Kết Nối. Ở Shippo chúng tôi sử dụng OAuth2.
+Mã xác thực (đôi với bên thứ 3) của một tài khoản có được sau khi trải qua quá trình chứng thực - authentication. Chính vì vậy chúng tôi gọi tài liệu này là bộ Tài Liệu Kết Nối. Ở Shippo chúng tôi sử dụng OAuth2.
+## Kết nối với Shippo sẽ mang đến những khả năng gì?
 
-## Learn Redux
-
-We have a variety of resources available to help you learn Redux, no matter what your background or learning style is.
+* Tạo đơn hàng tự động, quản lý được mã đơn trả về
+* Chủ động nhận thông tin thay đổi của vận đơn: ví dụ như thay đổi trạng thái
+* Theo dõi thông tin tài chính
+* Quản lý thông tin của Shop
+* Lấy dữ liệu địa danh của Shippo
 
 ### Just the Basics
 
@@ -61,7 +64,8 @@ Here are some suggestions on when it makes sense to use Redux:
 
 Yes, these guidelines are subjective and vague, but this is for good reason. The point at which you should integrate Redux into your application is different for every user and different for every application.
 
-> **For more thoughts on how Redux is meant to be used, see:**
+> **For more thoughts on how Redux is meant to be used, see:**  
+>
 >
 > * [**You Might Not Need Redux**](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367) 
 > * [**The Tao of Redux, Part 1 - Implementation and Intent**](http://blog.isquaredsoftware.com/2017/05/idiomatic-redux-tao-of-redux-part-1/) 
