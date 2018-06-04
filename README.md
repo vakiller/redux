@@ -1,15 +1,10 @@
-# Read Me
+# TÀI LIỆU KẾT NỐI SHIPPO
 
-Redux is a predictable state container for JavaScript apps.  
-\(Not to be confused with a WordPress framework – [Redux Framework](https://reduxframework.com/).\)
+Hệ thống Shippo là hệ thống mở, cung cấp khả năng kết nối mạnh mẽ. Bộ tài liệu này nhằm cung cấp những thông tin cho các nhà phát triển các thông tin và hướng dẫn cách thức kết nối tới Shippo.
 
-It helps you write applications that behave consistently, run in different environments \(client, server, and native\), and are easy to test. On top of that, it provides a great developer experience, such as [live code editing combined with a time traveling debugger](https://github.com/reduxjs/redux-devtools).
+Việc kết nối thực hiện bởi việc tạo các truy vấn HTTP tới đường dẫn API cung cấp bởi Shippo (ngắn gọn là call API). Các truy vấn này tất nhiên phải được xác thực bằng các mã xác thực "Access Token" hoặc mã xác thực cá nhân "Personal Access Token".
 
-You can use Redux together with [React](https://reactjs.org), or with any other view library.  
-It is tiny \(2kB, including dependencies\).
-
-[![build status](https://img.shields.io/travis/reduxjs/redux/master.svg?style=flat-square)](https://travis-ci.org/reduxjs/redux) [![npm version](https://img.shields.io/npm/v/redux.svg?style=flat-square)](https://www.npmjs.com/package/redux) [![npm downloads](https://img.shields.io/npm/dm/redux.svg?style=flat-square)](https://www.npmjs.com/package/redux) [![redux channel on discord](https://img.shields.io/badge/discord-%23redux%20%40%20reactiflux-61dafb.svg?style=flat-square)](https://discord.gg/0ZcbPKXt5bZ6au5t) [![Changelog \#187](https://img.shields.io/badge/changelog-%23187-lightgrey.svg?style=flat-square)](https://changelog.com/187)
-
+Mã xác thực (đôi với bên thứ 3) của một tài khoản có được sau khi trải qua quá trình chứng thực - authentication. Chính vì vậy chúng tôi gọi tài liệu này là bộ Tài Liệu Kết Nối. Ở Shippo chúng tôi sử dụng OAuth2.
 ## Learn Redux
 
 We have a variety of resources available to help you learn Redux, no matter what your background or learning style is.
