@@ -23,7 +23,7 @@ And many, many more! The Redux Addons Catalog has [**a list of Redux-based appli
 
 **Documentation**
 
-* [Introduction: Examples](../introduction/examples.md)
+* [Introduction: Examples](../gioi-thieu-ve-shippo/examples.md)
 
 **Discussions**
 

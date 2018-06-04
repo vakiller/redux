@@ -109,7 +109,7 @@ This is all we need to know for now. The particular mechanism to dispatch these 
 
 > #### Note on Error Handling
 >
-> In a real app, you'd also want to dispatch an action on request failure. We won't implement error handling in this tutorial, but the [real world example](../introduction/examples.md#real-world) shows one of the possible approaches.
+> In a real app, you'd also want to dispatch an action on request failure. We won't implement error handling in this tutorial, but the [real world example](../gioi-thieu-ve-shippo/examples.md#real-world) shows one of the possible approaches.
 
 ## Designing the State Shape
 
@@ -158,7 +158,7 @@ There are a few important bits here:
 >
 > In this example, we store the received items together with the pagination information. However, this approach won't work well if you have nested entities referencing each other, or if you let the user edit items. Imagine the user wants to edit a fetched post, but this post is duplicated in several places in the state tree. This would be really painful to implement.
 >
-> If you have nested entities, or if you let users edit received entities, you should keep them separately in the state as if it was a database. In pagination information, you would only refer to them by their IDs. This lets you always keep them up to date. The [real world example](../introduction/examples.md#real-world) shows this approach, together with [normalizr](https://github.com/paularmstrong/normalizr) to normalize the nested API responses. With this approach, your state might look like this:
+> If you have nested entities, or if you let users edit received entities, you should keep them separately in the state as if it was a database. In pagination information, you would only refer to them by their IDs. This lets you always keep them up to date. The [real world example](../gioi-thieu-ve-shippo/examples.md#real-world) shows this approach, together with [normalizr](https://github.com/paularmstrong/normalizr) to normalize the nested API responses. With this approach, your state might look like this:
 >
 > ```javascript
 > {
@@ -298,7 +298,7 @@ In this code, there are two interesting parts:
   return Object.assign({}, state, nextState)
   ```
 
-* We extracted `posts(state, action)` that manages the state of a specific post list. This is just [reducer composition](../basics/reducers.md#splitting-reducers)! It is our choice how to split the reducer into smaller reducers, and in this case, we're delegating updating items inside an object to a `posts` reducer. The [real world example](../introduction/examples.md#real-world) goes even further, showing how to create a reducer factory for parameterized pagination reducers.
+* We extracted `posts(state, action)` that manages the state of a specific post list. This is just [reducer composition](../basics/reducers.md#splitting-reducers)! It is our choice how to split the reducer into smaller reducers, and in this case, we're delegating updating items inside an object to a `posts` reducer. The [real world example](../gioi-thieu-ve-shippo/examples.md#real-world) goes even further, showing how to create a reducer factory for parameterized pagination reducers.
 
 Remember that reducers are just functions, so you can use functional composition and higher-order functions as much as you feel comfortable.
 
@@ -518,7 +518,7 @@ store
 * You can use [redux-observable](https://github.com/redux-observable/redux-observable) to dispatch Observables.
 * You can use the [redux-saga](https://github.com/yelouafi/redux-saga/) middleware to build more complex asynchronous actions.
 * You can use the [redux-pack](https://github.com/lelandrichardson/redux-pack) middleware to dispatch promise-based asynchronous actions.
-* You can even write a custom middleware to describe calls to your API, like the [real world example](../introduction/examples.md#real-world) does.
+* You can even write a custom middleware to describe calls to your API, like the [real world example](../gioi-thieu-ve-shippo/examples.md#real-world) does.
 
 It is up to you to try a few options, choose a convention you like, and follow it, whether with, or without the middleware.
 
